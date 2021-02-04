@@ -81,4 +81,20 @@ public class EmployeeController {
 
 
     }
+
+    @GetMapping("/search")
+    public String searchForContent(@RequestParam("employeeName") String name,Model model){
+
+        // get the employee
+        List<Employee> employees = employeeService.searchBy(name);
+
+        // add to the spring model
+
+        model.addAttribute("employees",employees);
+
+        // send to /employees/list
+
+        return "/employees/list-employees";
+
+    }
 }

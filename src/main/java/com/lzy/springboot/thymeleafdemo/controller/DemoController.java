@@ -5,7 +5,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
-public class DemonController {
+public class DemoController {
 
     // create a mapping for "/hello"
 

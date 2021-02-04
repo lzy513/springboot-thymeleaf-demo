@@ -16,4 +16,5 @@ public interface EmployeeService {
 
     public void deleteById(int id);
 
+    List<Employee> searchBy(String name);
 }
